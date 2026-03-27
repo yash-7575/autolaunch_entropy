@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(98,43,211,0.08), rgba(98,43,211,0.03));
+  border: 1px solid rgba(98,43,211,0.25);
+  border-radius: 14px;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.dismiss {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--new-textItemBlur);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.2s;
+
+  &:hover { color: rgb(var(--new-textColor)); }
+}
+
+.progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--new-table-border);
+  transition: background 0.3s;
+
+  &.active { background: var(--new-btn-primary); }
+}
+
+.question {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(var(--new-textColor));
+  margin: 0 0 16px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.option {
+  padding: 8px 16px;
+  background: var(--new-bgColorInner);
+  border: 1px solid var(--new-table-border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: rgb(var(--new-textColor));
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: var(--new-btn-primary);
+    background: rgba(98,43,211,0.08);
+    color: var(--new-btn-primary);
+  }
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  text-align: center;
+  animation: fadeInUp 0.3s ease both;
+}
+
+.doneIcon { font-size: 32px; }
+
+.doneTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(var(--new-textColor));
+  margin: 0;
+}
+
+.doneSub {
+  font-size: 13px;
+  color: var(--new-textItemBlur);
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

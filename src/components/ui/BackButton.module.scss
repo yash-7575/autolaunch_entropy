@@ -1,0 +1,20 @@
+.backButton {
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #6366f1;
+  border-radius: 8px;
+  color: #6366f1;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    background: #6366f1;
+    color: white;
+    transform: translateX(-4px);
+  }
+}

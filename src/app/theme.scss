@@ -1,0 +1,119 @@
+// Enhanced Theme System inspired by modern social media tools
+:root {
+  // Light Theme
+  --backdrop: rgba(55, 37, 97, 0.2);
+  --settings-bg: #eceef1;
+  --separator: #d5d9dd;
+  --border-color: #eaecee;
+  --bg-primary: #f0f2f4;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e7e9eb;
+  --text-primary: 14, 14, 14;
+  --text-secondary: #777b7f;
+  --text-focused: #3900b2;
+  --box-focused: #ebe8ff;
+  --block-separator: #f2f2f4;
+  --btn-simple: #eceef1;
+  --btn-text: #0e0e0e;
+  --btn-primary: #612bd3;
+  --btn-ai: #d82d7e;
+  --box-hover: #f4f6f8;
+  --table-border: #e7e9eb;
+  --table-header: #f5f7f9;
+  --table-text: #777b7f;
+  --table-text-focused: #fc69ff;
+  --menu-shadow: -22px 83px 24px 0 rgba(55, 52, 75, 0),
+    -14px 53px 22px 0 rgba(55, 52, 75, 0.01),
+    -8px 30px 19px 0 rgba(55, 52, 75, 0.05),
+    -3px 13px 14px 0 rgba(55, 52, 75, 0.09),
+    -1px 3px 8px 0 rgba(55, 52, 75, 0.1);
+  --popup-bg: rgba(55, 37, 97, 0.2);
+  --success: #32d583;
+  --error: #f97066;
+  --warning: #ffac30;
+  --info: #1d9bf0;
+}
+
+:root[data-theme='dark'] {
+  --backdrop: #000;
+  --settings-bg: #242323;
+  --separator: #454444;
+  --border-color: #252525;
+  --bg-primary: #0e0e0e;
+  --bg-secondary: #1a1919;
+  --bg-tertiary: #212121;
+  --text-primary: 255, 255, 255;
+  --text-secondary: #999999;
+  --text-focused: #ffffff;
+  --box-focused: #fff;
+  --block-separator: #272626;
+  --btn-simple: #313030;
+  --btn-text: #ffffff;
+  --btn-primary: #612bd3;
+  --btn-ai: #d82d7e;
+  --box-hover: #201f1f;
+  --table-border: #2b2b2b;
+  --table-header: #1e1d1d;
+  --table-text: #9c9c9c;
+  --table-text-focused: #fc69ff;
+  --menu-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.5);
+  --popup-bg: rgba(65, 64, 66, 0.3);
+  --success: #32d583;
+  --error: #f97066;
+  --warning: #ffac30;
+  --info: #1d9bf0;
+}
+
+// Animation keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+// Utility classes
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

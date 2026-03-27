@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 f2c7755faaea82b74b7ef65fe1967ea2fb776b22 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773400523 +0530	commit (initial): Initial commit from Create Next App
+f2c7755faaea82b74b7ef65fe1967ea2fb776b22 361fb56f841bc886a9b5bf48b3e89b382c830af2 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773659585 +0530	commit: initial commit
+361fb56f841bc886a9b5bf48b3e89b382c830af2 0000000000000000000000000000000000000000 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773659585 +0530	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 361fb56f841bc886a9b5bf48b3e89b382c830af2 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773659585 +0530	Branch: renamed refs/heads/master to refs/heads/main
+361fb56f841bc886a9b5bf48b3e89b382c830af2 d7f3e13befa9d225d6b1e865492f28cf6b5b45ea Bhavik04-coder <bhavik.dumore24@vit.edu> 1773659799 +0530	commit: fix: disable sentry source maps for vercel build
+d7f3e13befa9d225d6b1e865492f28cf6b5b45ea 54d330346c593deaa7b5f649c67b454f937eabe1 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773659832 +0530	commit: fix: add turbopack config for Next.js 16
+54d330346c593deaa7b5f649c67b454f937eabe1 138550ef4def6d2730b42ac0a29da0bb70a37606 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773660129 +0530	commit: fix: remove invalid sentry key from next.config.ts
+138550ef4def6d2730b42ac0a29da0bb70a37606 475c936b9f6a71c5bbc3d22f292a362d68a924b9 Bhavik04-coder <bhavik.dumore24@vit.edu> 1773660578 +0530	commit: fix: add netlify config for Next.js
+475c936b9f6a71c5bbc3d22f292a362d68a924b9 916a9d621a0629860c7c60c090ca56946dd56557 Bhavik04-coder <bhavik.dumore24@vit.edu> 1774605116 +0530	commit: feat: update UI components, auth, launches, and add new features
+916a9d621a0629860c7c60c090ca56946dd56557 916a9d621a0629860c7c60c090ca56946dd56557 Bhavik04-coder <bhavik.dumore24@vit.edu> 1774605248 +0530	checkout: moving from main to autolaunch

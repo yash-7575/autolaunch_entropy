@@ -1,0 +1,234 @@
+.generator {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(var(--text-primary));
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.input,
+.textarea,
+.select {
+  padding: 0.65rem 0.875rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: rgb(var(--text-primary));
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: var(--btn-primary);
+    box-shadow: 0 0 0 3px rgba(98, 43, 211, 0.1);
+  }
+
+  &::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.select option {
+  background: var(--bg-secondary);
+  color: rgb(var(--text-primary));
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.error {
+  flex: 1;
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 6px;
+  color: #ef4444;
+  font-size: 13px;
+}
+
+/* Results */
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resultsTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(var(--text-primary));
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: rgb(var(--text-primary));
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    background: var(--box-hover);
+  }
+
+  &.activeTab {
+    background: var(--btn-primary);
+    border-color: var(--btn-primary);
+    color: #fff;
+  }
+}
+
+.platformContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contentBox {
+  position: relative;
+  padding: 0.875rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: rgb(var(--text-primary));
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  background: var(--box-focused);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: rgb(var(--text-primary));
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    background: var(--btn-primary);
+    color: #fff;
+    border-color: var(--btn-primary);
+  }
+}
+
+.useBtn {
+  align-self: flex-end;
+  margin-top: 0.25rem;
+}
+
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.optionalLabel {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.loadingSubtext {
+  font-size: 0.78rem;
+  opacity: 0.6;
+}
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--btn-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

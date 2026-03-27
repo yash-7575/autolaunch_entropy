@@ -1,0 +1,18 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--new-textItemBlur);
+  transition: all 0.2s;
+
+  &:hover {
+    color: rgb(var(--new-textColor));
+    background: var(--new-box-hover);
+  }
+}
